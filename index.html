@@ -17,282 +17,137 @@
       </ul>
     </header>
 
-    <main id="content">
-      <section id="hero" aria-labelledby="hero-title">
-        <div>
-          <div>
-            <p>Olá! Bem-vindo(a) ao meu portfólio</p>
+    <section id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="hero-greeting">Eai, sou o João Henrique!</span>
+          <h1>Desenvolvedor FullStack</h1>
+          <p>
+            Transformo ideias em código e crio experiências digitais incríveis.
+          </p>
 
-            <h1 id="hero-title">
-              Eu sou o <span>João Henrique</span>, desenvolvedor de software.
-            </h1>
-
-            <p>
-              Crio aplicações web com foco em performance, acessibilidade e uma
-              ótima experiência de uso.
-            </p>
-
-            <div>
-              <a href="#projects">Ver projetos</a>
-              <a href="#contact">Falar comigo</a>
-            </div>
-
-            <ul aria-label="Resumo rápido">
-              <li>
-                <strong>+10</strong>
-                <span>Projetos</span>
-              </li>
-              <li>
-                <strong>2+</strong>
-                <span>Anos</span>
-              </li>
-              <li>
-                <strong>Web</strong>
-                <span>Fullstack</span>
-              </li>
-            </ul>
-          </div>
-
-          <div aria-label="Foto ou ilustração do autor">
-            <div role="img" aria-label="Foto do autor"></div>
+          <div class="hero-actions">
+            <button>Entre em Contato</button>
+            <button>Saiba Mais...</button>
           </div>
         </div>
-      </section>
 
-      <section id="about" aria-labelledby="about-title">
-        <div>
-          <header>
-            <h2 id="about-title">Sobre mim</h2>
-            <p>
-              Um pouco sobre minha trajetória, foco e tecnologias que uso no dia
-              a dia.
-            </p>
-          </header>
-
-          <div>
-            <div>
-              <p>
-                Sou desenvolvedor com experiência em construir interfaces
-                modernas e APIs escaláveis. Gosto de transformar ideias em
-                produtos bem estruturados, com código limpo e organizado.
-              </p>
-
-              <p>
-                Tenho interesse especial em arquitetura, boas práticas e
-                projetos que geram impacto real.
-              </p>
-
-              <div aria-label="Destaques">
-                <article>
-                  <h3>Foco</h3>
-                  <p>UX, performance, organização e manutenibilidade.</p>
-                </article>
-
-                <article>
-                  <h3>Stack</h3>
-                  <p>React, TypeScript, Node.js, bancos SQL.</p>
-                </article>
-
-                <article>
-                  <h3>Objetivo</h3>
-                  <p>
-                    Construir soluções completas e confiáveis de ponta a ponta.
-                  </p>
-                </article>
-              </div>
-            </div>
-
-            <aside aria-label="Tecnologias e habilidades">
-              <h3>Tecnologias</h3>
-
-              <ul role="list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>SQL</li>
-                <li>Git</li>
-              </ul>
-
-              <a href="#contact">Vamos conversar</a>
-            </aside>
-          </div>
+        <div class="hero-image">
+          <img src="#" alt="Imagem ilustrativa" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="projects" aria-labelledby="projects-title">
-        <div>
-          <header>
-            <h2 id="projects-title">Projetos</h2>
-            <p>Alguns trabalhos que desenvolvi.</p>
-          </header>
+    <section id="about">
+      <div class="about-container">
+        <div class="about-avatar">
+          <img src="#" alt="Foto do desenvolvedor" />
+        </div>
 
-          <div aria-label="Carrossel de projetos">
-            <div>
-              <button
-                type="button"
-                aria-label="Projeto anterior"
-                data-carousel="prev"
-              >
-                ◀
-              </button>
+        <div class="about-content">
+          <h2>Sobre mim</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui velit
+            blanditiis rem dolorem eius! Fugit doloribus dolore officiis
+            provident neque.
+          </p>
 
-              <button
-                type="button"
-                aria-label="Próximo projeto"
-                data-carousel="next"
-              >
-                ▶
-              </button>
+          <div class="about-actions">
+            <a href="#">GitHub</a>
+            <a href="#">Currículo</a>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat">
+              <strong>200</strong>
+              <span>Seguidores</span>
             </div>
 
-            <div tabindex="0" aria-label="Lista de projetos rolável">
-              <ul role="list">
-                <li>
-                  <article>
-                    <div role="img" aria-label="Imagem do Projeto 1"></div>
-
-                    <div>
-                      <h3>Projeto 1</h3>
-                      <p>Descrição do projeto</p>
-
-                      <ul aria-label="Tecnologias usadas">
-                        <li>React</li>
-                        <li>TS</li>
-                        <li>API</li>
-                      </ul>
-
-                      <div>
-                        <a href="#" target="_blank" rel="noreferrer">Código</a>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-
-                <li>
-                  <article>
-                    <div role="img" aria-label="Imagem do Projeto 2"></div>
-
-                    <div>
-                      <h3>Projeto 2</h3>
-                      <p>Descrição do projeto</p>
-
-                      <ul aria-label="Tecnologias usadas">
-                        <li>Node</li>
-                        <li>SQL</li>
-                        <li>Docker</li>
-                      </ul>
-
-                      <div>
-                        <a href="#" target="_blank" rel="noreferrer">Código</a>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-
-                <li>
-                  <article>
-                    <div role="img" aria-label="Imagem do Projeto 3"></div>
-
-                    <div>
-                      <h3>Projeto 3</h3>
-                      <p>Descrição do projeto</p>
-
-                      <ul aria-label="Tecnologias usadas">
-                        <li>Angular</li>
-                        <li>Java</li>
-                        <li>Postgres</li>
-                      </ul>
-
-                      <div>
-                        <a href="#" target="_blank" rel="noreferrer">Código</a>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-              </ul>
+            <div class="stat">
+              <strong>20</strong>
+              <span>Repositórios</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact" aria-labelledby="contact-title">
-        <div>
-          <header>
-            <h2 id="contact-title">Contato</h2>
-            <p>Me encontre nas redes ou envie uma mensagem pelo formulário.</p>
-          </header>
+    <section id="projects">
+      <h2>Meus Projetos</h2>
 
-          <div>
-            <aside aria-label="Redes sociais do autor">
-              <h3>Redes</h3>
+      <div class="projects-carousel">
+        <button class="carousel-control prev">❮</button>
 
-              <ul role="list">
-                <li>
-                  <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noreferrer">Instagram</a>
-                </li>
-                <li>
-                  <a href="mailto:jhenrique.caval@hotmail.com">E-mail</a>
-                </li>
-              </ul>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="#" alt="Imagem do projeto" />
+          </div>
 
-              <div>
-                <p>
-                  Prefere mensagem direta? Me mande um e-mail e eu respondo
-                  assim que possível.
-                </p>
-              </div>
-            </aside>
+          <div class="project-content">
+            <h3>Projeto GitHub</h3>
+            <p>Projeto desenvolvido no GitHub</p>
 
-            <div>
-              <h3>Enviar mensagem</h3>
+            <div class="project-tags">
+              <span>GitHub</span>
+            </div>
 
-              <form action="mailto:jhenrique.caval@hotmail.com" method="post">
-                <label>
-                  <span>Nome</span>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Seu nome"
-                    required
-                  />
-                </label>
-
-                <label>
-                  <span>E-mail</span>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="seuemail@exemplo.com"
-                    required
-                  />
-                </label>
-
-                <label>
-                  <span>Mensagem</span>
-                  <textarea
-                    name="message"
-                    rows="5"
-                    placeholder="Digite sua mensagem..."
-                    required
-                  ></textarea>
-                </label>
-
-                <button type="submit">Enviar</button>
-              </form>
+            <div class="project-actions">
+              <a href="#">GitHub</a>
+              <a href="#">Deploy</a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+
+        <button class="carousel-control next">❯</button>
+      </div>
+
+      <div class="carousel-indicators">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Entre em Contato</h2>
+          <p>Sinta-se à vontade para entrar em contato comigo!</p>
+
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form>
+            <label>
+              Nome:
+              <input type="text" placeholder="Digite o seu nome completo" />
+            </label>
+
+            <label>
+              E-mail:
+              <input type="email" placeholder="Digite o seu e-mail" />
+            </label>
+
+            <label>
+              Assunto:
+              <input type="text" placeholder="Digite o assunto da mensagem" />
+            </label>
+
+            <label>
+              Mensagem:
+              <textarea placeholder="Escreva a sua mensagem aqui..."></textarea>
+            </label>
+
+            <button type="submit">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <footer>Desenvolvido por João Henrique</footer>
 
