@@ -3,153 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>João Henrique - Portfolio</title>
   </head>
   <body>
     <header>
-      <p>Portfólio</p>
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#projects">Pojetos</a></li>
-        <li><a href="#contact">Contatos</a></li>
-      </ul>
+      <div class="menu-content">
+        <a href="index.html" id="titulo">Portfólio</a>
+        <nav>
+          <ul class="menu-list">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contatos</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section id="hero">
-      <div class="hero-container">
+    <main>
+      <section id="hero" class="section-container hero-container">
         <div class="hero-content">
-          <span class="hero-greeting">Eai, sou o João Henrique!</span>
+          <span>Eai, sou o João Henrique!</span>
           <h1>Desenvolvedor FullStack</h1>
           <p>
-            Transformo ideias em código e crio experiências digitais incríveis.
+            Sou apaixonado por criar soluções digitais que fazem a diferença!
           </p>
 
-          <div class="hero-actions">
-            <button>Entre em Contato</button>
-            <button>Saiba Mais...</button>
+          <div class="buttons-container">
+            <a href="#contact" class="botao">Entre em Contato</a>
+            <a href="#about" class="botao-outline">Saiba Mais...</a>
           </div>
         </div>
-
         <div class="hero-image">
-          <img src="#" alt="Imagem ilustrativa" />
+          <img
+            src="./assets/img/foto_dev_man.svg"
+            alt="Foto do autor"
+            class="float-animation"
+          />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about">
-      <div class="about-container">
-        <div class="about-avatar">
-          <img src="#" alt="Foto do desenvolvedor" />
+      <section id="about" class="section-container about-container">
+        <div class="about-image">
+          <img src="./assets/img/avatar_dev_man.svg" alt="foto do perfil" />
         </div>
 
         <div class="about-content">
           <h2>Sobre mim</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui velit
-            blanditiis rem dolorem eius! Fugit doloribus dolore officiis
-            provident neque.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+            ad repudiandae aliquid delectus tenetur sed neque molestiae
+            exercitationem sint distinctio, corrupti nesciunt? Blanditiis
+            facilis odio culpa! Architecto quisquam qui nemo?
           </p>
 
-          <div class="about-actions">
-            <a href="#">GitHub</a>
-            <a href="#">Currículo</a>
-          </div>
-
-          <div class="about-stats">
-            <div class="stat">
-              <strong>200</strong>
-              <span>Seguidores</span>
+          <div class="about-buttons-data">
+            <div class="buttons-container">
+              <a href="#" target="_blank" class="botao">Ver Github</a>
+              <a href="#" target="_blank" class="botao-outline">Currículo</a>
             </div>
 
-            <div class="stat">
-              <strong>20</strong>
-              <span>Repositórios</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div class="data-container">
+              <div class="data-item">
+                <span class="data-number">900</span>
+                <span class="data-label">seguidores</span>
+              </div>
 
-    <section id="projects">
-      <h2>Meus Projetos</h2>
-
-      <div class="projects-carousel">
-        <button class="carousel-control prev">❮</button>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="#" alt="Imagem do projeto" />
-          </div>
-
-          <div class="project-content">
-            <h3>Projeto GitHub</h3>
-            <p>Projeto desenvolvido no GitHub</p>
-
-            <div class="project-tags">
-              <span>GitHub</span>
-            </div>
-
-            <div class="project-actions">
-              <a href="#">GitHub</a>
-              <a href="#">Deploy</a>
+              <div class="data-item">
+                <span class="data-number">40</span>
+                <span class="data-label">repositórios</span>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <button class="carousel-control next">❯</button>
-      </div>
+      <section id="projects" class="section-container projects-container">
+        <h2>Meus Projetos</h2>
+        <div class="swiper projects-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="project-card">
+                <figure class="project-image">
+                  <img
+                    src="./assets/icons/languages/github.svg"
+                    alt="icone github"
+                  />
+                </figure>
+                <div class="project-content">
+                  <h3>Projeto Github</h3>
+                  <p>Projeto Desenvolvido no github</p>
+                  <div class="project-tags">
+                    <span class="tag">Github</span>
+                  </div>
+                  <div class="project-buttons">
+                    <a href="#" target="_blank" class="botao botao-sm"
+                      >Github</a
+                    >
+                    <a href="#" target="_blank" class="botao-outline botao-sm"
+                      >Deploy</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
-      <div class="carousel-indicators">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="contact-container">
+      <section id="contact" class="section-container contact-container">
         <div class="contact-info">
-          <h2>Entre em Contato</h2>
+          <h2>Entre em contato</h2>
           <p>Sinta-se à vontade para entrar em contato comigo!</p>
 
-          <div class="social-links">
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="Instagram">Instagram</a>
+          <div class="social-container">
+            <a
+              href="#"
+              target="_blank"
+              class="social-icon"
+              aria-label="Linkedin"
+            >
+              <img
+                src="./assets/icons/social/linkedin.svg"
+                alt="link para linkedin"
+              />
+            </a>
+            <a href="#" target="_blank" class="social-icon" aria-label="Github">
+              <img
+                src="./assets/icons/social/github.svg"
+                alt="link para github"
+              />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="social-icon"
+              aria-label="Instagram"
+            >
+              <img
+                src="./assets/icons/social/instagram.svg"
+                alt="link para instagram"
+              />
+            </a>
           </div>
         </div>
 
-        <div class="contact-form">
-          <form>
-            <label>
-              Nome:
-              <input type="text" placeholder="Digite o seu nome completo" />
-            </label>
+        <form action="" id="formulario">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Digite o seu nome completo"
+          />
+          <span id="erro-name"></span>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite o seu email"
+          />
+          <span id="erro-email"></span>
+          <label for="subject">Assunto</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Digite o assunto da mensagem"
+          />
+          <span id="erro-subject"></span>
+          <label for="message">Mensagem</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Escreva a sua mensagem aqui..."
+          ></textarea>
+          <button class="botao" type="submit">Enviar Mensagem</button>
+        </form>
+      </section>
+    </main>
 
-            <label>
-              E-mail:
-              <input type="email" placeholder="Digite o seu e-mail" />
-            </label>
-
-            <label>
-              Assunto:
-              <input type="text" placeholder="Digite o assunto da mensagem" />
-            </label>
-
-            <label>
-              Mensagem:
-              <textarea placeholder="Escreva a sua mensagem aqui..."></textarea>
-            </label>
-
-            <button type="submit">Enviar Mensagem</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <footer>Desenvolvido por João Henrique</footer>
+    <footer>Desenvolvido por João Henrique - 2026</footer>
 
     <script src="./assets/js/scripts.js"></script>
   </body>
