@@ -235,6 +235,5 @@ formulario.addEventListener("submit", function (event) {
   }
 });
 
-// Executar a função ao carregar o script
 getProjectsGithub();
 getAboutGithub();
